@@ -1,0 +1,16 @@
+---
+system:
+  logLevel: info
+fusionsolar:
+  username: <username>
+  password: <password>
+mqtt:
+  host: 127.0.0.1
+  port: 1883
+  auth: true
+  username: jeedom
+  password: <password>
+  connectTimeout: 4000
+  reconnectPeriod: 1000
+  topic: fusionsolar
+...
