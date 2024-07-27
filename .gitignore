@@ -1,0 +1,5 @@
+settings.yml
+.ruff_cache
+venv
+__pycache__
+devices.json

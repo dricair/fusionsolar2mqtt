@@ -1,0 +1,3 @@
+paho-mqtt >= 2.1
+pyhfs @ git+https://github.com/dricair/pyhfs@main
+pyyaml
