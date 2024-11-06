@@ -51,11 +51,12 @@ def mqtt_publish(mqtt_settings: Dict, client: mqtt_client.Client, payload: Any):
         mqtt_settings: dict of MQTT specific settings
         msg: Message to send. If not string/int/float, it is converted to JSON string.
     """
+
     def json_serial(obj):
         """JSON serializer for objects not serializable by default json code"""
         if isinstance(obj, (datetime.datetime, datetime.date)):
             return obj.isoformat()
-        raise TypeError ("Type %s not serializable" % type(obj))
+        raise TypeError("Type %s not serializable" % type(obj))
 
     if isinstance(payload, (str, int, float)):
         msg = payload
