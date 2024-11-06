@@ -5,11 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python Debugger: Current File",
+            "name": "Debugpy: fusionsolar2mqtt",
             "type": "debugpy",
             "request": "launch",
-            "program": "${file}",
-            "console": "integratedTerminal"
+            "program": "fusionsolar2mqtt.py",
+            "console": "integratedTerminal",
+            "args": ["--debug"]
         }
     ]
 }
