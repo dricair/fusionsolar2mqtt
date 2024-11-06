@@ -59,7 +59,7 @@ def parse_args() -> Tuple[argparse.ArgumentParser, argparse.Namespace]:
     parser.add_argument(
         "--device-file",
         type=Path,
-        default=Path("devices.json", help="Devices retrieved from Fusion Solar"),
+        default=Path("devices.json"), help="Devices retrieved from Fusion Solar",
     )
     parser.add_argument(
         "--list", action="store_true", help="List Plant/Devices commands and exit"
