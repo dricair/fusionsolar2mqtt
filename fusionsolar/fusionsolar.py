@@ -148,6 +148,7 @@ def compute_plant_data(plant_data: list[pyhfs.PlantRealTimeData], device_data: l
             consumption = production - meter - (ch_battery or 0) + (dis_battery or 0)
             result[plant] = {
                 "power": {
+                    "production": production,
                     "consumption": consumption,
                     "consumption_pv": min(production, consumption + (ch_battery or 0))
                 }
